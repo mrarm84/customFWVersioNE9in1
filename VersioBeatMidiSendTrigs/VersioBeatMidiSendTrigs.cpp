@@ -1,4 +1,4 @@
-// VersionBeatMidiSendTrigs - VersioBeatSend with a trigger drum machine in
+// VersioBeatMidiSendTrigs - VersioBeatSend with a trigger drum machine in
 // the last slot (SW0 right, SW1 right): TRIG DRUMS, see TrigDrumsEngine.h.
 //   jacks 1..7 (the CV jacks under K0..K6) + gate = triggers for 8 voices:
 //   BD SD OH CH CP MULTI FM-SYNTH PLUCK-SYNTH. A fast jump on a jack plays

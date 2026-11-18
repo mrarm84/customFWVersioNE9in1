@@ -1,8 +1,8 @@
-# VersionBeatMidiSendTrigs
+# VersioBeatMidiSendTrigs
 
 This is **VersioBeatSend** with a **trigger drum machine** in the last slot (SW0 right, SW1 right), in place of the Beat Machine. The other 8 modes are the same as in VersioBeatSend (see its README).
 
-Firmware: `build/VersionBeatMidiSendTrigs.bin` (bootloader build, flashed like VersioBeatSend). Choose the mode as usual: set both switches right, hold the button 4 s, then press once. After that, the switches have new jobs (see below).
+Firmware: `build/VersioBeatMidiSendTrigs.bin` (bootloader build, flashed like VersioBeatSend). Choose the mode as usual: set both switches right, hold the button 4 s, then press once. After that, the switches have new jobs (see below).
 
 ## TRIG DRUMS — 8 voices, 8 trigger inputs
 
@@ -86,12 +86,12 @@ The reverb takes each voice's SEND, plus the echo. The **echo** is a tempo-synce
 - A hold longer than 4 s still arms a mode change, as in every mode. If you don't confirm, it is dropped after 2 s.
 
 ### ALT firmware: hold + turn = momentary tweak
-`build_alt/VersionBeatMidiSendTrigsAlt.bin` (`make ALT=1`, flash with `make ALT=1 program-dfu`). Everything is the same, plus:
+`build_alt/VersioBeatMidiSendTrigsAlt.bin` (`make ALT=1`, flash with `make ALT=1 program-dfu`). Everything is the same, plus:
 - **Hold the button and turn knobs:** the knobs move their parameters on the voice you are editing, or on **all 8** in CTRL-ALL. Every parameter, including the FX (FILTER, DRIVE, SEND), moves by the amount you turn.
 - **Release the button:** every parameter **snaps back** to where it was when you pressed. Knobs then change nothing until you turn them again.
 - **DUB only comes in if you hold without turning.** As soon as a knob turns during the hold, that hold is just the tweak: no DUB (if DUB had already started, it cuts out in 0.15 s).
 - Like CTRL-ALL, the tweak never moves the synths' pitch, and moves drum TUNE only a little.
-- The normal `build/VersionBeatMidiSendTrigs.bin` doesn't have this.
+- The normal `build/VersioBeatMidiSendTrigs.bin` doesn't have this.
 
 ### Kits (the switches inside the mode)
 Each switch position is a different **drum machine**: the same 8 voices and knobs, with a different character (pitch drop, click, decays, noise, hat metal, bus drive, bit depth). Left / left is the **SEQ**.

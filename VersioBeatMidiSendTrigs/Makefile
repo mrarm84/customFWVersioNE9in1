@@ -1,18 +1,18 @@
 # Project Name
-TARGET = VersionBeatMidiSendTrigs
+TARGET = VersioBeatMidiSendTrigs
 
 # ALT = 1: TRIG DRUMS hold button + turn = momentary tweak, snaps back on
 # release. Separate binary and build dir:  make ALT=1
-#   -> build_alt/VersionBeatMidiSendTrigsAlt.bin
+#   -> build_alt/VersioBeatMidiSendTrigsAlt.bin
 ALT ?= 0
 ifeq ($(ALT), 1)
-TARGET = VersionBeatMidiSendTrigsAlt
+TARGET = VersioBeatMidiSendTrigsAlt
 override BUILD_DIR = build_alt
 C_DEFS += -DHOLD_TWEAK=1
 endif
 
 # Sources (DSP is header-only in ../common and ../StarLabCommon)
-CPP_SOURCES = VersionBeatMidiSendTrigs.cpp
+CPP_SOURCES = VersioBeatMidiSendTrigs.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../libDaisy
