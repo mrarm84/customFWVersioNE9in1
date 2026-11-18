@@ -1,0 +1,7 @@
+build/
+build_alt/
+renders/
+*.exe
+__pycache__/
+*.bak
+*.bak2
